@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<script src="jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+
+	</script>
+	<style>
+		#send_area {
+			position: fixed;
+			width: 100vw;
+			background-color:rgb(226, 226, 226);
+			bottom: 0;
+			height: 50px
+		}
+
+		#top_bar {
+			text-align: center;
+			position: fixed;
+			width: 100vw;
+			background-color:rgb(226, 226, 226);
+			top: 0px;
+			z-index: 9999;
+			height: 40px;
+		}
+
+		body::-webkit-scrollbar {
+			display: none;
+		}
+
+		body {
+			-ms-overflow-style: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="top_marin" style="height: 30px;"></div>
+	<div id="top_bar">
+		<div id="page_title">トーク</div>
+		<div class="right">
+			<span onclick="set_btn();">
+				<img src="../pic/config.png" height="28px"style="position:absolute;right:15px;top:5px;"></div>
+			</span>
+		</div>
+	</div>
+
+	<div id="all">
+		<div id="messages"></div>
+	</div>
+	<div id="top_marin" style="height: 40px;"></div>
+
+	<div id="send_area">
+		<textarea id="message" class="message_text" cols="32" rows="1" placeholder="メッセージを入力する"></textarea>
+		<button class="message_btn" onclick="message_push()">
+			送
+		</button>
+	</div>
+
+	<div id="setting_back">
+		<div id="setting_box">
+			<center>設定</center>
+			<hr>
+			<div id="input_box">
+				<div><span class="head_tag">学習機能</span></div>
+				<br>
+				<img src="../pic/kao2.png" class="icon_pic">
+				<div id="print_box"> </div>
+				<div id="print_box_desc">を覚えました。</div>
+				<br>
+				<textarea id="input_text" class="message_text" cols="32" rows="1" placeholder="覚えさせる言葉を入力する"></textarea>
+				<button class="message_btn" onclick="input_message()">記</ons-icon></button>
+			</div>
+			<hr>
+			<br>
+			<div><span class="head_tag">その他</span></div>
+			<br>
+			<button id="a" onclick="reset();">すべての記憶を消す</button>
+		</div>
+	</div>
+
+	<script src="js1.js"></script>
+
+</body>
+
+</html>
