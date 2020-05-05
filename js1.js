@@ -28,7 +28,7 @@ var page1 = document.getElementById('first-page');
     }
 
     $('<div class="mess_cont" id="message_' + i + '">').text("").appendTo('#messages');
-    $('<div class= "' + t + '">').html('<img src="../pic/kao2.png" class="icon_pic">').appendTo('#message_' + i);
+    $('<div class= "' + t + '">').html('<img src="./kao2.png" class="icon_pic">').appendTo('#message_' + i);
     $('<div class="container_child" id="messages_child_' + i + '">').text("").appendTo('#message_' + i);
     $('<div class= "' + c_type + '"id="mess_id_' + i + '">').text(msgbox[key][1]).appendTo('#messages_child_' + i);
     $('<div class= "time_print">').text(msgbox[key][2] + " に送信").appendTo('#mess_id_' + i);
@@ -53,7 +53,7 @@ function mess_print_one(key) {
   }
 
   $('<div class="mess_cont" id="message_' + i + '">').text("").appendTo('#messages');
-  $('<div class= "' + t + '">').html('<img src="../pic/kao2.png" class="icon_pic">').appendTo('#message_' + i);
+  $('<div class= "' + t + '">').html('<img src="./kao2.png" class="icon_pic">').appendTo('#message_' + i);
   $('<div class="container_child" id="messages_child_' + i + '">').text("").appendTo('#message_' + i);
   $('<div class= "' + c_type + '"id="mess_id_' + i + '">').text(msgbox[key][1]).appendTo('#messages_child_' + i);
   $('<div class= "time_print">').text(msgbox[key][2] + " に送信").appendTo('#mess_id_' + i);
